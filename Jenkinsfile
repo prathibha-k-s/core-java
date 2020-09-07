@@ -20,11 +20,18 @@ pipeline {
                   bat 'mvn -f  C:/Jekins_Local/Jenkins-2.222./workspace/maven_weblogicDeploy/MavenWebApp/pom.xml clean install -DskipTests'
 				  }
 				  
-              }  
+                                }  
                   
-              }
+                    }
               
-              }
+                        }
+	   
+	    stage('Read'){
+	        stepas{
+		 echo 'this step for reading properties file'
+	              }
+		      
+                          }
           }
 }
     
