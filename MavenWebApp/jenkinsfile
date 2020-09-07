@@ -23,7 +23,12 @@ pipeline {
               }  
                   
               }
-              
+	      stage('Read'){
+	        stepas{
+		 echo 'this step for reading properties file'
+	              }
+		      
+                          }
               }
           }
 }
