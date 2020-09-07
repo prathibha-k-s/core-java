@@ -12,7 +12,7 @@ pipeline {
                 if("${params.RunTestCases}"=="Yes")
 				{
 				echo "${params.RunTestCases}"
-                  bat 'mvn -f  C:/Jekins_Local/Jenkins-2.222./workspace/maven_weblogicDeploy/MavenWebApp/pom.xml clean install'
+                  bat 'mvn -f  C:/Jekins_Local/Jenkins-2.222.1/workspace/maven_weblogicDeploy/MavenWebApp/pom.xml clean install'
 				 }
 				  else
 				{
