@@ -29,7 +29,7 @@ pipeline {
 	   stage('Read'){
 		   steps{
 			echo 'this step is for reading the properties file'  
-			  def props = readProperties  file: 'C:\Jekins_Local\Jenkins-2.222.1\workspace\Choice parameter for test cases\MavenWebApp\webLogic.properties'
+			  def props = readProperties  file: 'C:/Jekins_Local/Jenkins-2.222.1/workspace/Choice parameter for test cases/MavenWebApp/webLogic.properties'
 			   echo "${props}"
 			  
 			   
