@@ -13,12 +13,12 @@ pipeline {
                 if("${params.RunTestCases}"=="Yes")
 				{
 				echo "${params.RunTestCases}"
-                  bat 'mvn -f  C:/Jekins_Local/Jenkins-2.222.1/workspace/maven_weblogicDeploy/MavenWebApp/pom.xml clean install'
+                  bat 'mvn -f C:/Jekins_Local/Jenkins-2.222.1/workspace/Choice parameter for test cases/MavenWebApp/pom.xml clean install'
 				 }
 				  else
 				{
                echo "${params.RunTestCases}"
-                  bat 'mvn -f  C:/Jekins_Local/Jenkins-2.222.1/workspace/maven_weblogicDeploy/MavenWebApp/pom.xml clean install -DskipTests'
+                  bat 'mvn -f  C:/Jekins_Local/Jenkins-2.222.1/workspace/Choice parameter for test cases/MavenWebApp/pom.xml clean install -DskipTests'
 				  }
 				  
                                 }  
@@ -29,7 +29,10 @@ pipeline {
 	   stage('Read'){
 		   steps{
 			echo 'this step is for reading the properties file'  
-			   // def props = readProperties  file: 'dir/my.properties'
+			  def props = readProperties  file: 'C:\Jekins_Local\Jenkins-2.222.1\workspace\Choice parameter for test cases\MavenWebApp\webLogic.properties'
+			   ech "${props}"
+			  
+			   
 		   }
 	   }
 	   
