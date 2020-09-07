@@ -26,12 +26,7 @@ pipeline {
               
                         }
 	   
-	    stage('Read'){
-	        steps{
-		 echo 'this step for reading properties file'
-	              }
-		      
-                          }
+	   
           }
 }
     
