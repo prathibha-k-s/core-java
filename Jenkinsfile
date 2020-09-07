@@ -28,7 +28,7 @@ pipeline {
 	   stage('Read'){
 		   steps{
 			echo 'this step is for reading the properties file'  
-			    def props = readProperties  file: 'dir/my.properties'
+			   // def props = readProperties  file: 'dir/my.properties'
 		   }
 	   }
 	   
