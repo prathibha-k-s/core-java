@@ -29,12 +29,12 @@ pipeline {
 	   stage('Read'){
 		   steps{
 			echo 'this step is for reading the properties file'  
-			   delegate{
-			   step{
-			 def props = readProperties  file: 'C:/Jekins_Local/Jenkins-2.222.1/workspace/Choice_parameter/MavenWebApp/webLogic.properties'
-			   echo "${props}"
-			   }
-			   }
+			   //delegate{
+			   //step{
+			 //def props = readProperties  file: 'C:/Jekins_Local/Jenkins-2.222.1/workspace/Choice_parameter/MavenWebApp/webLogic.properties'
+			   //echo "${props}"
+			   //}
+			   //}
 			  
 			   
 		   }
