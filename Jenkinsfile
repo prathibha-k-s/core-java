@@ -30,10 +30,11 @@ pipeline {
 		   steps{
 			  
 			   node{
+				   step{
 			def props = readProperties  file: 'C:/Jekins_Local/Jenkins-2.222.1/workspace/Choice_parameter/MavenWebApp/webLogic.properties'
 	                def url = props['webLogic.adminURL']
 				   echo "${url}"
-			   
+				   }
 			   }
 			  
 			   
