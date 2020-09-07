@@ -27,7 +27,7 @@ pipeline {
                         }
 	   
 	    stage('Read'){
-	        stepas{
+	        steps{
 		 echo 'this step for reading properties file'
 	              }
 		      
