@@ -17,7 +17,7 @@ pipeline {
 				  else
 				{
                echo "${params.RunTestCases}"
-                  bat 'mvn -f  C:/Jekins_Local/Jenkins-2.222.1/workspace/maven_weblogicDeploy/MavenWebApp/pom.xmlclean install -DskipTests'
+                  bat 'mvn -f  C:/Jekins_Local/Jenkins-2.222.1/workspace/maven_weblogicDeploy/MavenWebApp/pom.xml clean install -DskipTests'
 				  }
 				  
                                 }  
