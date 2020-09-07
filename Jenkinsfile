@@ -4,7 +4,8 @@ pipeline {
    stages {
         stage('Checkout') {
             steps {
-               checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '4d44c06d-7b6f-464e-b8c3-2cd4a4f004b2', url: 'https://github.com/prathibha-k-s/core-java.git']]])     }
+               checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '4d44c06d-7b6f-464e-b8c3-2cd4a4f004b2', url: 'https://github.com/prathibha-k-s/core-java.git']]])    
+	    }
           stage('Build'){
               steps{
 			  script{
