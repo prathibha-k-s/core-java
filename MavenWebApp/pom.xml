@@ -24,7 +24,7 @@
       <artifactId>weblogic-maven-plugin</artifactId> 
       <version>10.3.4</version> 
       <configuration> 
-          <adminurl>http://localhost:7001</adminurl>
+          <adminurl>t3://localhost:7001</adminurl>
           <user>webLogic</user> 
           <password>webLogic123</password> 
           <upload>true</upload> 
