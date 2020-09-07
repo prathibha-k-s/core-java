@@ -1,3 +1,4 @@
+def readProp
 properties([[$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], parameters([choice(choices: 'Yes\nNo', description: '', name: 'RunTestCases')])])
 pipeline {
    agent any
@@ -27,20 +28,11 @@ pipeline {
               
                         }
 	   stage('Read'){
-		   steps{
-			  
-			   node{
-				   step{
-			def props = readProperties  file: 'C:/Jekins_Local/Jenkins-2.222.1/workspace/Choice_parameter/MavenWebApp/webLogic.properties'
+		  
+			 readProp = readProperties  file: 'C:/Jekins_Local/Jenkins-2.222.1/workspace/Choice_parameter/MavenWebApp/webLogic.properties'
 	                def url = props['webLogic.adminURL']
 				   echo "${url}"
-				   }
-			   }
-			  
-			   
-		  
-		   }
-	   }
+			}
 	   
 	   
           }
