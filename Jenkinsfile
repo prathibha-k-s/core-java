@@ -4,8 +4,7 @@ pipeline {
    stages {
         stage('Checkout') {
             steps {
-               checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'feb5fd15-05c3-4c4e-8a8d-0681de723987', url: 'https://github.aepsc.com/AEP/MDMIntegrations.git']]])}
-          }
+               checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '4d44c06d-7b6f-464e-b8c3-2cd4a4f004b2', url: 'https://github.com/prathibha-k-s/core-java.git']]])     }
           stage('Build'){
               steps{
 			  script{
